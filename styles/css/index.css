@@ -1,0 +1,361 @@
+body {
+    background-color: var(--background);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ----------- HEADER ----------- */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../../media/pics/bg_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+#show-header {
+    background-color: var(--absestos);
+    border-color: var(--absestos);
+    font-size: 11px !important;
+    margin-left: 20px;
+}
+
+.header-hidden {
+    top: -100vh;
+}
+
+.welcome {
+    text-align: center;
+    margin: auto 0;
+}
+
+.welcome h1 {
+    padding-bottom: 5px;
+}
+
+.welcome h3 {
+    padding-bottom: 15px;
+}
+
+/* ------------------------------ */
+
+/* ------------ MAIN ------------ */
+
+/* // Home // */
+#home {
+    display: flex;
+    width: 100%;
+    padding: 100px 5%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../media/pics/bg_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#media {
+    background-color:rgba(0, 0, 0, 0);
+    max-width: 500px !important;
+    height: max-content;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#media img {
+    width: 100%;
+}
+
+#presentation {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    width: 100%;
+    max-width: 800px;
+    margin-right: 50px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.text {
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.testimonials {
+    width: 100%;
+    max-width: 700px;
+}
+
+.owl-prev,
+.owl-next {
+    width: 30px;
+    outline: none;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background: var(--absestos) !important;
+}
+
+/* // Services // */
+#services {
+    background-color: var(--clouds);
+    padding: 60px 5% 100px 5%;
+    background-image: url("../../media/pics/bg_02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.services-head {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.services-head h3 {
+    margin: auto 15px;
+}
+
+.service-img {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-img img {
+    opacity: 0;
+    width: 60px !important;
+    height: 60px;
+    transition: all 0.2s;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 0 10px;
+    text-align: left;
+    background-color: var(--absestos);
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.content {
+    color: white;
+    padding: 10px 20px 15px 20px;
+    height: 100%;
+    transition: all 0.2s;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.card:hover .content {
+    background-color: var(--wet-asphalt);
+    color: white !important;
+}
+
+.card:hover .content h2 {
+    color: white;
+    border-color: white;
+}
+
+/* // Work // */
+
+#work {
+    display: flex;
+    width: 100%;
+    padding: 60px 5%;
+    justify-content: center;
+    background-image: url("../../media/pics/bg_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+#work-1,
+#work-2,
+#work-3 {
+    width: 100%;
+    height: 100%;
+    transition: all 0.25s;
+}
+
+.car-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    padding-top: 27%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.car-linkto {
+    display: block;
+    width: 100%;
+    padding: 0 0 15px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.owl-dots button {
+    outline: none;
+}
+
+.owl-dots .active span {
+    background: var(--midnight-blue) !important;
+}
+
+.owl-dot:hover span {
+    background: var(--wet-asphalt) !important;
+}
+
+/* // Contact // */
+
+#contact {
+    display: flex;
+    width: 100%;
+    padding: 50px 5%;
+    justify-content: center;
+    background-color: var(--clouds);
+}
+
+.form {
+    min-width: 470px;
+    margin-right: 80px;
+}
+
+#submit {
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 0;
+}
+
+.socials {
+    width: 100%;
+    max-width: 800px;
+}
+
+.socials h1 {
+    text-align: right;
+}
+
+.socials-box { 
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+.socials-box a {
+    color: black;
+}
+
+.socials-box div {
+    display: flex;
+    margin: 7px 20px;
+    align-content: center;
+}
+
+.socials-box img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+
+#mbox-contact {
+    visibility: hidden;
+    z-index: -1;
+}
+
+/* // Footer // */
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: var(--midnight-blue);
+}
+
+.footer-logo {
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+footer h2 {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+footer p,
+footer a {
+    font-weight: 300;
+    font-size: 12px;
+    color: white !important;
+}
+
+
+footer .socials-box img {
+    width: 13px;
+    height: 13px;
+}
+
+footer .socials-box div {
+    margin: 2px 0;
+}
+
+footer .socials-box {
+    margin-bottom: 15px;
+}
