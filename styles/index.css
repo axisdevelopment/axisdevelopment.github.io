@@ -1,0 +1,339 @@
+/* HEADER
+------------------------------------------------------------- */
+.h-asset-01 {
+    right: 5%;
+    bottom: 5%;
+} .h-asset-02 {
+    left: 8%;
+    top: 5%;
+} .h-asset-03 {
+    bottom: 5%;
+    left: 50%;
+}
+
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    right: 5%;
+    z-index: 999;
+}
+
+#nav-bar a {
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.link-box {
+    display: flex;
+    padding: 20px 30px 10px 30px;
+    background-color: var(--gray);
+    transition: all 0.2s;
+    box-shadow: 0px 8px white;
+} .link-box:hover {
+    transform: translateY(8px) !important;
+    box-shadow: 0px -8px var(--pink) !important;
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 5%;
+    background-color: var(--gray);
+}
+
+.home-box {
+    width: 540px;
+    align-self: center;
+    font-family: "Cutive Mono", monospace;
+    font-size: 24px;
+    color: white;
+}
+
+.home-box img {
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: calc(100% - 250px);
+}
+
+/* SERVICES
+--------------------------------------------------------------- */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    justify-content: space-between;
+    background-color: var(--pink);
+}
+
+.service-box {
+    margin: 18px 0;
+    padding: 30px;
+    background-color: var(--gray);
+    color: white;
+    transition: all 0.2s;
+    text-align: center;
+} .service-box:hover {
+    transform: translate(-12px, -12px);
+    box-shadow: 12px 12px white;
+}
+
+.service-box img {
+    margin-bottom: 10px;
+}
+
+/* METHOD
+--------------------------------------------------------------- */
+#method {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    background-color: white;
+}
+
+#method p {
+    margin: 24px 0;
+    font-family: "Cutive Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--gray);
+}
+
+.method-img-box {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    align-items: center;
+}
+
+.method-img-box img {
+    width: 100%;
+}
+
+.method-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    height: 100%;
+    justify-items: center;
+}
+
+.method-text-box div {
+    display: flex;
+    align-items: center;
+}
+
+.method-text-box div img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px
+}
+
+.list-1,
+.list-2 {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.list-1:hover, .list-2:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 20px var(--gray);
+}
+
+.list-2 { text-align: right; }
+
+/* PRICES
+--------------------------------------------------------------- */
+#prices {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    justify-content: space-around;
+    background-color: var(--gray);
+}
+
+.price-box {
+    width: 30%;
+    padding: 30px 20px;
+    background-color: white;
+    text-align: center;
+    transition: all 0.2s;
+} .price-box:hover {
+    transform: translate(-12px, -12px);
+    box-shadow: 12px 12px var(--pink);
+}
+
+.content {
+    height: calc(100% - 50px);
+}
+
+/* CONTACT
+--------------------------------------------------------------- */
+#contact {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    justify-content: center;
+    background-color: var(--pink);
+}
+
+.form-box {
+    text-align: center;
+    width: 600px;
+}
+
+.line-1,
+.line-2 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.input-box {
+    text-align: center;
+    width: 48%;
+}
+
+/* MODAL BOX
+--------------------------------------------------------------- */
+.mbox-bg {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.mbox-content {
+    padding: 30px 40px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 12px 12px var(--pink);
+}
+
+/* FOOTER
+--------------------------------------------------------------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 10px 0;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--gray);
+}
+
+.foot-logo {
+    width: 150px;
+    margin-right: 40px;
+} .foot-logo img { width: 100% }
+
+.foot-nav a {
+    display: block;
+    width: 110px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: "Cutive Mono", monospace;
+    font-size: 18px;
+    color: white;
+    transition: all 0.2s;
+} .foot-nav a:hover {
+    padding-left: 6px;
+    border-left: 4px solid var(--pink);
+    color: var(--pink)
+}
+
+.cr {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    font-family: "Cutive Mono", monospace;
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    #prices {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .price-box {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .h-asset-02 {
+        display: none;
+    }
+    .method-img-box {
+        display: none;
+    }
+    .method-text-box {
+        width: 100%;
+    }
+    .method-text-box div {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .method-text-box div img {
+        align-self: flex-start;
+    }
+    .method-text-box div p {
+        align-self: flex-end;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #nav-bar {
+        width: 100%;
+        right: 0;
+    }
+    #nav-bar a {
+        width: 100%;
+        text-align: center;
+    }
+    .service-box {
+        width: 100%;
+    }
+    .line-1,
+    .line-2 {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .input-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .h-asset-03 {
+        display: none;
+    }
+    #nav-bar a {
+        font-size: 11px;
+    }
+    .link-box {
+        padding: 10px 0 10px 10px;
+    }
+
+}
+
